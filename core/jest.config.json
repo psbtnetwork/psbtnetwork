@@ -1,0 +1,15 @@
+{
+  "verbose": true,
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "projects": [
+    {
+      "preset": "ts-jest",
+      "testPathIgnorePatterns": ["<rootDir>/node_modules/", "/*.mock.spec.ts"],
+      "testMatch": ["<rootDir>/*.spec.ts"]
+    }
+  ]
+}
